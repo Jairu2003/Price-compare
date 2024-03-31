@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>Product Comparison</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Product Comparison: {{ prices.Flipkart }} vs. {{ prices.Amazon }}</h1>
+  <div>
+    <div>
+        <img src="{{ image_urls.Flipkart }}" alt="Flipkart Product Image" width="200" height="200">
+        <br>
+        <p>Price: {{ prices.Flipkart }}</p>
+        <p><a href="https://www.flipkart.com/search?q={{ search_query }}" target="_blank">Go to Flipkart</a></p>
+    </div>
+    <div>
+        <img src="{{ image_urls.Flipkart }}" alt="Amazon Product Image" width="200" height="200">
+        <br>
+        <p>Price: {{ prices.Amazon }}</p>
+        <p><a href="https://www.amazon.in/s?k={{ search_query }}" target="_blank">Go to Amazon</a></p>
+    </div>
+</div>
+</body>
+</html>
